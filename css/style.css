@@ -1,6 +1,6 @@
 /* Custom Prop */
 :root{
-  
+
 }
 
 /* GLOBAL STYLES */
@@ -49,4 +49,45 @@ img{
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
+}
+
+.wall{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://st.depositphotos.com/1780485/2609/i/950/depositphotos_26093783-stock-photo-background-of-brick-wall-texture.jpg);
+
+}
+
+.rom{
+  display: flex;
+  border: 20px ridge rgb(99, 63, 23);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+  background-image: url(https://media-exp1.licdn.com/dms/image/C4D1BAQGMjmg83ijMGg/company-background_10000/0/1572096461640?e=1639407600&v=beta&t=ftQjiC8kP1OKyJ7ABqpdCh-2vpDBrnFrlmY5Ck009gc);
+  background-size: cover;
+  background-position: center center;
+}
+
+.tabaqa{
+  width: 200px;
+  height: 400px;
+  border: 20px ridge rgb(129, 79, 25);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.7s ease;
+}
+
+.tabaqa-left{
+  transform-origin: left center;
+}
+
+.tabaqa-right{
+  transform-origin: right center;
+}
+
+.rom:hover .tabaqa-left{
+  transform: perspective(2000px) rotateY(-125deg);
+}
+
+.rom:hover .tabaqa-right{
+  transform: perspective(2000px) rotateY(125deg);
 }
