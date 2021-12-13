@@ -82,12 +82,13 @@ img{
 
 .tabaqa-right{
   transform-origin: right center;
+  background-position: center center;
 }
 
 .rom:hover .tabaqa-left{
   transform: perspective(2000px) rotateY(-125deg);
 }
 
-.rom:hover .tabaqa-right{
+/* .rom:hover .tabaqa-right{
   transform: perspective(2000px) rotateY(125deg);
-}
+} */
